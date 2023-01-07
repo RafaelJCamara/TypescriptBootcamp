@@ -1,0 +1,12 @@
+=> What is TypeScript?
+
+-> TypeScript is a JavaScript superset, meaning it's language that buulds upon JavaScript and adds new features and advantages to JavaScript.
+
+-> Runtimes that support running JavaScript, like the browser or a NodeJs server, don't support TypeScript directly.
+    - TypeScript is compiled to JavaScript code
+
+-> TypeScript adds types to JavaScript
+    - This allows us to catch some errors as early as in the development phase
+    - One example would be having a function that is supposed to sum two numbers and we pass in numbers disguised as characters.
+
+
