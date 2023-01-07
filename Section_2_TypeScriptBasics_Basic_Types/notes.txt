@@ -1,0 +1,13 @@
+-> One key difference between javascript and typescript is that javascript uses dynamic types, which are resolved at runtime, and typescript uses static types, which are set during the development time and should remain the same throughout the time.
+
+-> Also, we must have in consideration the casing when assigning types. Core types in Typescript are all lowercase.
+
+-> Beside the 'number' type, which we have seen on the previous chapter, there are two other core types in typescript: 'string' and 'boolean'
+
+-> You could explicitly declare the variable type when you declare it (ex. let age : number = 49)
+    - Although this is possible, it's not a best practise as Typescript has a type inference mechanism that can infere the type
+    - The only way this explict type declaration would make sense is if you don't give a value to the declared attribute.
+
+-> Also one thing to have in mind is that whenever you first make the variable declaration and initialization, you must respect the type infered.
+    - For instance, if I create a variable that has a string value, I can't change this variable's value to a number.
+
