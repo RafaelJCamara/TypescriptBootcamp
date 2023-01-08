@@ -3,6 +3,7 @@
 -> Also, we must have in consideration the casing when assigning types. Core types in Typescript are all lowercase.
 
 -> Beside the 'number' type, which we have seen on the previous chapter, there are two other core types in typescript: 'string' and 'boolean'
+    - Regarding the 'boolean' type, you can only accept true or false, and not truthy or falsy values
 
 -> You could explicitly declare the variable type when you declare it (ex. let age : number = 49)
     - Although this is possible, it's not a best practise as Typescript has a type inference mechanism that can infere the type
