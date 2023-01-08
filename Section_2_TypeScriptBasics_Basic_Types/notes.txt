@@ -11,3 +11,8 @@
 -> Also one thing to have in mind is that whenever you first make the variable declaration and initialization, you must respect the type infered.
     - For instance, if I create a variable that has a string value, I can't change this variable's value to a number.
 
+-> If you try to access an object's property that doesn't exist, you will be given an error at compile time.
+
+-> Adding upon the object types mentioned above, we have the object type.
+    - If we specify something being of type object (native javascript), we will be given error accessing object properties that do exist
+    - To avoid such errors, we should either let Typescript infer the type or explicitly provide the object type
