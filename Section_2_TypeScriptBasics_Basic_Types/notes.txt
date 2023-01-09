@@ -17,3 +17,25 @@
 -> Adding upon the object types mentioned above, we have the object type.
     - If we specify something being of type object (native javascript), we will be given error accessing object properties that do exist
     - To avoid such errors, we should either let Typescript infer the type or explicitly provide the object type
+
+-> You can also define arrays as your type.
+    - The syntax for it is <array_type>[] (ex. string[])
+
+-> The other type defined is a 'tuple'.
+    - Tuples are useful whenever you want to have an array of exactly x elements.
+    - An example of tuple definition is role:[number, string]. This defined a tuple with exactly 2 elements, being the first element a number and the second element a string.
+
+-> Another type that we have here is 'union' type.
+    - This type allows us to have more flexibility regarding the value accepted for a type.
+    - For example, when declaring a function we might want the type of the parameters to either be strings or number.
+    - In order to do that, what we can do is: "functionInputParameter: string | number" .
+
+-> One aspect to have in consideration is 'literal types'.
+    - Literal types are the basic types that compose typescript/javascript, but that have a specific value attached to them.
+    - For example in an union type, I want to have the string 'admin' as a part of the union.
+
+-> Sometimes we can abbreviate our type definition (ex. when defining the same union type over and over again)
+    - To abbreviate it, we can use what is called type aliases.
+    - To define one we must do the following, for example when defining an union type: type TypeName = string | number.
+
+

@@ -25,3 +25,14 @@ const person: { name: string; age: number } = {
   name: "Rafael",
   age: 26,
 };
+
+enum ContractType {
+  FULL_TIME,
+  PART_TIME,
+}
+
+const anotherObject = {
+  contract: ContractType.FULL_TIME,
+};
+
+console.log(anotherObject.contract);
