@@ -1,3 +1,7 @@
+/**
+ * Classes
+ */
+
 class Department {
   constructor(public name: string, private employees: string[]) {}
 
@@ -47,3 +51,28 @@ console.log(itDep.mostRecentEmail);
 abstract class absClass {
   abstract someAbsMethod(name: string): void;
 }
+
+/**
+ * Interfaces
+ */
+
+interface PersonInterface {
+  name: string;
+  age: number;
+
+  greeting(message?: string): void;
+}
+
+class Person implements PersonInterface {
+  constructor(public name: string, public age: number) {}
+
+  greeting(message?: string): void {
+    if (message) console.log(`Message: ${message}`);
+    else console.log("Generic Hello message.");
+  }
+}
+
+const person = new Person("Rafael", 26);
+console.log(person.name);
+console.log(person.age);
+person.greeting();

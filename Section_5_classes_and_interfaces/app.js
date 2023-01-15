@@ -1,3 +1,6 @@
+/**
+ * Classes
+ */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -41,9 +44,11 @@ var ITDepartment = /** @class */ (function (_super) {
         return _this;
     }
     Object.defineProperty(ITDepartment.prototype, "mostRecentEmail", {
+        //defines the getter of the recentEMail property
         get: function () {
             return this.recentEmail;
         },
+        //defines the setter of the recentEmail property
         set: function (recent) {
             this.recentEmail = recent;
         },
@@ -55,6 +60,29 @@ var ITDepartment = /** @class */ (function (_super) {
     return ITDepartment;
 }(Department));
 var itDep = new ITDepartment("IT", []);
+// we deal with getters and setters as if they are properties from the class
 console.log(itDep.mostRecentEmail);
 itDep.mostRecentEmail = "rafael@email.com";
 console.log(itDep.mostRecentEmail);
+var absClass = /** @class */ (function () {
+    function absClass() {
+    }
+    return absClass;
+}());
+var Person = /** @class */ (function () {
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    Person.prototype.greeting = function (message) {
+        if (message)
+            console.log("Message: ".concat(message));
+        else
+            console.log("Generic Hello message.");
+    };
+    return Person;
+}());
+var person = new Person("Rafael", 26);
+console.log(person.name);
+console.log(person.age);
+person.greeting();
