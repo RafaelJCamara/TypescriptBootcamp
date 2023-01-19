@@ -1,0 +1,12 @@
+-> We also have something here called 'discriminated unions'
+    - This basically means that when you have a union type you can't use a property because it might not exist on one of the types (example of the Horse and Bird speed)
+    - In order to overcome this problem, what we can do is to create an attribute/property with a specific value so that then we can decide based upon such attribute (in the case of the animals, we introduced the type of animal attribute)
+
+-> Another important aspect are type castings.
+    - They are important in situations when, for example, you retrieve an element from the DOM and that element comes as a default HTMLElement and you can't do things that are common for that specific element.
+    - There are two syntaxes for casting:
+        -- <TypeToCast> document.getXXXXXXXXX
+        -- document.getXXXXXXXXX as <TypeToCast>
+
+- Often when we do operations such as casting, Typescript will infer that the element might be null
+    - If you are sure that the result will never be null, on that case, you can add an ! to the end of the document.getXXXXXXXXXXXX

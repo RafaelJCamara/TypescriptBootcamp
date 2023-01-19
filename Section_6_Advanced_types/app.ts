@@ -21,3 +21,22 @@ const e1: SuperEmployee = {
   roles: ["role"],
   startDate: new Date(),
 };
+
+/**
+ * Index properties
+ *  - Sometimes we just want to create flexible classes/interfaces, and this means that we don't know exactly the number of properties it would have
+ *  - One example of this is that we might want to create an Error interface for our forms, but they differ from one another
+ */
+
+interface ErrorContainer {
+  id: string;
+  [property: string]: string;
+}
+
+const errorBag: ErrorContainer = {
+  //mandatory
+  id: "someErrorId",
+  //optional
+  message: "some error message",
+  date: "date",
+};
